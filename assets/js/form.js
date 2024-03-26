@@ -3,7 +3,9 @@ const blogTitle = document.querySelector('#title');
 const blogContent = document.querySelector('#content');
 const postButton = document.querySelector('#submit');
 //make an array of objects where each post is an object
+
 let allPosts = [];
+
 
 postButton.addEventListener('click',function(event){
     event.preventDefault();
@@ -19,7 +21,7 @@ postButton.addEventListener('click',function(event){
     //stores the array as a string
     localStorage.setItem('all', JSON.stringify(allPosts));
     // window.location.replace("first-blog/blog.html")
-    
+
     //redirects to the blog page where it displays posts
     window.location.href ="../first-blog/blog.html";
 });

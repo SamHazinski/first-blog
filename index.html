@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sam Hazinski's Blog Submission</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css"/>
 </head>
+
+<header class="header">
+    <h1>
+        Sam Hazinski's First Blog
+    </h1>
+    <h2>
+        <button id="dark">Dark Mode</button>
+    </h2>
 <body>
-    
+    <h2>What's on your mind?</h2>
+    <main>
+        <div id="input-box-wrapper">
+            <div id="input-box">
+                <input type="text" id="username" placeholder="Enter Username" />
+                <input type="text" id="title" placeholder="Enter Title"/>
+                <input type="text" id="content" placeholder="Enter Text" />
+                <button id="submit">Submit</button>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>
